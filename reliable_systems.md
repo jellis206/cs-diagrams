@@ -36,7 +36,7 @@ graph TB
     Client[Client Requests]
     LB[Load Balancer]
 
-    subgraph "Consistent Hashing Ring"
+    subgraph Ring["Consistent Hashing Ring"]
         N1[Node 1<br/>Hash Range: 0-99<br/>Data: A, B, C]
         N2[Node 2<br/>Hash Range: 100-199<br/>Data: D, E, F]
         N3[Node 3<br/>Hash Range: 200-299<br/>Data: G, H, I]
@@ -73,7 +73,7 @@ graph TB
     Client[Client Requests]
     LB[Load Balancer]
 
-    subgraph "Consistent Hashing Ring - Node 2 Failed"
+    subgraph FailedRing["Ring - Node 2 Failed"]
         N1[Node 1<br/>Hash Range: 0-99<br/>Data: A, B, C]
         N2[Node 2 FAILED ❌<br/>Hash Range: 100-199<br/>Data: D, E, F<br/>UNAVAILABLE]
         N3[Node 3<br/>Hash Range: 200-299<br/>Data: G, H, I]
@@ -130,7 +130,7 @@ graph TB
     Client[Client Requests]
     LB[Load Balancer /<br/>Coordinator]
 
-    subgraph "Consistent Hashing Ring with Replication (N=3)"
+    subgraph ReplicatedRing["Replicated Ring (N=3)"]
         N1[Node 1<br/>Primary: A,B,C<br/>Replica: J,K,L<br/>Replica: D,E,F]
         N2[Node 2<br/>Primary: D,E,F<br/>Replica: A,B,C<br/>Replica: G,H,I]
         N3[Node 3<br/>Primary: G,H,I<br/>Replica: D,E,F<br/>Replica: J,K,L]
@@ -255,7 +255,7 @@ graph TB
     Client[Client Requests]
     LB[Load Balancer /<br/>Coordinator]
 
-    subgraph "Ring with Node 2 Failed - System Still Available"
+    subgraph FailoverRing["Node 2 Failed - Still Available"]
         N1[Node 1<br/>Primary: A,B,C<br/>Replica: J,K,L<br/>Replica: D,E,F ✓]
         N2[Node 2 FAILED ❌<br/>Primary: D,E,F ❌<br/>Replica: A,B,C ❌<br/>Replica: G,H,I ❌]
         N3[Node 3<br/>Primary: G,H,I<br/>Replica: D,E,F ✓<br/>Replica: J,K,L]
