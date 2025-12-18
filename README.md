@@ -4,10 +4,20 @@ A collection of computer science diagrams, database schemas, and technical docum
 
 ## Contents
 
-- **[Discount Tire ERD](discount_tire_erd.md)** - Entity Relationship Diagram for a Discount Tire database system
-  - Tracks customers, mechanics, garages, cars, and tire inventory
+- **[Discount Tire ERD](discount_tire_erd.md)** - Entity Relationship Diagram for a Discount Tire service business
+  - 23 tables covering customers, mechanics, garages, cars, tires, services, and financials
+  - Complete service tracking, inventory management, and payroll system
   - Includes Mermaid diagram and detailed schema documentation
-  - Normalized to 3NF with example queries
+  - 60+ example queries for business analytics
+  - Normalized to 3NF
+
+- **[Online Fly Shop ERD](fly_shop_erd.md)** - Entity Relationship Diagram for an e-commerce fly fishing shop
+  - 25 tables covering products, customers, orders, inventory, and fly-specific data
+  - Specialized tracking for fly patterns, target species, and water conditions
+  - Complete e-commerce flow: cart → order → payment → shipping
+  - Product variants (size, color, weight ratings) and multi-image support
+  - 50+ interesting questions including sales analytics and fly recommendations
+  - Normalized to 3NF
 
 ## Viewing Diagrams
 
