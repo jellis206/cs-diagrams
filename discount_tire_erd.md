@@ -12,7 +12,7 @@ This is a comprehensive database schema for Discount Tire, designed to manage al
 
 This enterprise-grade schema supports complete business operations from appointment scheduling through service completion, payment processing, inventory management, and customer relationship management.
 
-## Mermaid ERD
+## ERD
 
 ```mermaid
 erDiagram
