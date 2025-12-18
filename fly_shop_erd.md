@@ -11,7 +11,7 @@ This is a comprehensive database schema for an online fly fishing shop (e-commer
 
 This specialized schema captures the unique requirements of fly fishing retail, including technical specifications for equipment, fly pattern details, species targeting, and water condition matching.
 
-## Mermaid ERD
+## ERD
 
 ```mermaid
 erDiagram
